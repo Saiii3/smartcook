@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1084781215303",
+    "project_id": "smartcook-cor",
+    "storage_bucket": "smartcook-cor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084781215303:android:e54fa3cc69c055ebc0bb62",
+        "android_client_info": {
+          "package_name": "com.example.smartcook_cor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084781215303-puqqohtsn7s1he1l9sh260p090lpi6pr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartcook_cor",
+            "certificate_hash": "617ff117f4933dac3a764e93874efdf3c81e1b4d"
+          }
+        },
+        {
+          "client_id": "1084781215303-9glkk8ti5k9om41ml8j4fa617luvorcr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe6NDKaD5xCDt1pWqrS0eHzUHkTK5nDXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084781215303-9glkk8ti5k9om41ml8j4fa617luvorcr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1084781215303-1nqqmsl4hf6c0q6t7vb0hjnn33r2b44u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.smartcookCor"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
