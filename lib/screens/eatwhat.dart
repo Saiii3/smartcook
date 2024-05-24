@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -40,7 +42,7 @@ class _EatWhatScreenState extends State<EatWhatScreen> {
       }
     } else {
       // Generate random indices to select unique recipes
-      Set<int> randomIndices = Set();
+      Set<int> randomIndices = {};
       while (randomIndices.length < numberOfRecipes) {
         randomIndices.add(Random().nextInt(allRecipes.length));
       }

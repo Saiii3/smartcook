@@ -44,7 +44,7 @@ class _RecipeDetailViewScreenState extends State<RecipeDetailViewScreen> {
 
   @override
   Widget build(BuildContext context) {
-    YoutubePlayerController _controller = YoutubePlayerController(
+    YoutubePlayerController controller = YoutubePlayerController(
       initialVideoId:
           YoutubePlayer.convertUrlToId(widget.recipe.youtubeLink) ?? '',
       flags: const YoutubePlayerFlags(
@@ -90,7 +90,7 @@ class _RecipeDetailViewScreenState extends State<RecipeDetailViewScreen> {
               onHorizontalDragUpdate: (details) {
                 int seekMillis = details.primaryDelta!.sign.toInt() *
                     10000; // 10 seconds per drag
-                _controller.seekTo(_controller.value.position +
+                controller.seekTo(controller.value.position +
                     Duration(milliseconds: seekMillis));
               },
               onScaleUpdate: (ScaleUpdateDetails details) {
@@ -98,7 +98,7 @@ class _RecipeDetailViewScreenState extends State<RecipeDetailViewScreen> {
                 // This might be complex as YoutubePlayer doesn't natively support pinch to zoom
               },
               child: YoutubePlayer(
-                controller: _controller,
+                controller: controller,
                 showVideoProgressIndicator: true,
                 progressIndicatorColor: Colors.blueAccent,
               ),
